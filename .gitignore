@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# data folder 
+/data
+
+# the case given
+case.html
