@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Churn Prediction App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<body>
+
+<form action = "/getdelay" method="POST">
+	<p> Gender:   
+	<select name="gender">
+		<option value="Female"selected>Female</option>
+		<option value="Male">Male</option>
+	</select>
+
+	<p> Senior Citizen:   
+		<select name="SeniorCitizen">
+			<option value="1">1</option>
+			<option value="0"selected>0</option>
+		</select>
+	
+	<p> Partner:   
+		<select name="Partner">
+			<option value="True">True</option>
+			<option value="False"selected>False</option>
+		</select>
+
+	<p> Dependents:   
+		<select name="Dependents">
+			<option value="True">True</option>
+			<option value="False"selected>False</option>
+		</select>
+
+	<p> Tenure: <input name="tenure" type ="text" value="1" /> </p>
+
+	<p> Phone service:   
+		<select name="PhoneService">
+			<option value="True">True</option>
+			<option value="False"selected>False</option>
+		</select>
+
+	<p> Multiple lines:   
+		<select name="MultipleLines">
+			<option value="No"selected>No</option>
+			<option value="Yes">Yes</option>
+			<option value="No phone service">No phone service</option>
+		</select>
+
+	<p> Internet service:   
+		<select name="InternetService">
+			<option value="DSL"selected>DSL</option>
+			<option value="Fiber optic">Fiber optic</option>
+			<option value="No">No</option>
+		</select>
+
+		<p> Online security:   
+			<select name="OnlineSecurity">
+				<option value="Yes"selected>Yes</option>
+				<option value="No internet service">No internet service</option>
+				<option value="No">No</option>
+			</select>
+
+	<p> Online backup:   
+		<select name="OnlineBackup">
+			<option value="Yes"selected>Yes</option>
+				<option value="No internet service">No internet service</option>
+				<option value="No">No</option>
+			</select>
+
+		<p> Device protection:   
+			<select name="DeviceProtection">
+				<option value="Yes"selected>Yes</option>
+					<option value="No internet service">No internet service</option>
+					<option value="No">No</option>
+				</select>
+
+		<p> Tech support:   
+			<select name="TechSupport">
+				<option value="Yes"selected>Yes</option>
+					<option value="No internet service">No internet service</option>
+					<option value="No">No</option>
+				</select>
+
+		<p> Streaming TV:   
+			<select name="StreamingTV">
+				<option value="Yes"selected>Yes</option>
+					<option value="No internet service">No internet service</option>
+					<option value="No">No</option>
+				</select>
+
+	<p> Streaming movies:   
+		<select name="StreamingMovies">
+			<option value="Yes"selected>Yes</option>
+				<option value="No internet service">No internet service</option>
+				<option value="No">No</option>
+			</select>
+
+	<p> Contract:   
+		<select name="Contract">
+			<option value="Month-to-month"selected>Month-to-month</option>
+				<option value="Two year">Two year</option>
+				<option value="One year">One year</option>
+			</select>	
+
+			<p> Paperless billing:   
+				<select name="PaperlessBilling">
+					<option value="True">True</option>
+					<option value="False"selected>False</option>
+				</select>
+
+				<p> Payment method:   
+					<select name="PaymentMethod">
+						<option value="Electronic check">Electronic check</option>
+						<option value="Mailed check">Mailed check</option>
+						<option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+						<option value="Credit card (automatic)"selected>Credit card (automatic)</option>
+					</select>
+
+
+	<p> Monthly Charges: <input name="MonthlyCharges" type ="text" value="20" /> </p>
+	<p> Total Charges: <input name="TotalCharges" type ="text" value="2000" /> </p>
+	<p> <input type ="submit" value="submit" /> </p>
+</form>
+</body>
+</html>

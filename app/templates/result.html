@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<title>Churn Prediction App</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<body>
+<h3> Churn Score: {{ proba }} </h3>
+<h3> Churn prediction: {{ prediction }} </h3>
+<p><h4> [0] = Customer not likely to churn </h4></p>
+<p><h4> [1] = Customer likely to Churn </h4></p>
+
+</body>
+</html>
